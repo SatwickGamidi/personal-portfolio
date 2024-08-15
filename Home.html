@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>My portfolio</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://kit.fontawesome.com/0959d6ec7e.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    </head>
+    <body>
+    <div id="header">
+    <div class="container">
+    <nav>  
+    <img src="logo2.png" class="logo">
+    <ul>
+    <li><a href="#1">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">More on</a></li>
+    <li><a href="#3">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+    <div class="header-text" id="1">
+    <p>Programmer</p>
+    <h1> Hi, I'm <span>Satwick Gamidi</span><br>IV Semester,B-Tech</h1>
+    </div>
+    </div>
+    </div>
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="P2.JPG">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            Hi, I'm Satwick Gamidi, a passionate web designer born on June 22, 2005. I completed my schooling in Ongole and my intermediate studies in Tirupathi. Currently, I'm pursuing a B.Tech at SRM University, AP. I have a deep love for movies and enjoy playing games in my free time. My interests also extend to traveling and photography, which allow me to explore new places and capture memorable moments. I am known for my strong leadership skills and my inclusive attitude, enabling me to connect and collaborate with people from all walks of life. Trust is a cornerstone of my relationships, and I pride myself on never breaking the trust of those who believe in me. My creative thinking drives my passion for web design, and my leadership skills help me inspire and guide others. With a strong foundation in education and a diverse range of hobbies, I'm enthusiastic about blending creativity with technology to create impactful web experiences.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('courses')">Courses</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Developer Tools</span><br>C, C++, python</li>
+                                <li><span>Languages</span><br>Telugu, English, Hindi, Tamil.</li>
+                                <li><span>Sports</span><br>Cricket, Kabbadi, E-Games.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="courses">
+                            <ul>
+                                <li><span>NPTEL</span><br>The Joy Of Computing Using Python</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents"id="education">
+                            <ul>
+                                <li><span>B.Tech</span><br>SRM University, Mangalgiri, Andhra Pradesh</li>
+                                <li><span>Intermediate</span><br>Sri Chaitanya Junior College, Tirupathi, Andhra Pradesh</li>
+                                <li><span>Matriculation</span><br>Sri Chaitanya School, Ongole, Andhra Pradesh</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">ADD ON...</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Programming</h2>
+                        <p>C,C++,Python</p>
+                        
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Web Development</h2>
+                        <p>HTML,CSS & JavaScript </p>
+                        
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-key"></i>
+                        <h2>Also</h2>
+                        <p>SQL,Data Structures and Algorithms </p>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="aaa" id="3">
+    <div class="maa">
+    <div  class="bt  ">
+        
+    <a href="my resume.html.pdf" download class="btn ">Download CV</a>
+</div>
+</div>
+    </div>
+<div id="contact">
+    <div class="container">
+        <div class="contactleft">
+            <h1>Contact Me</h1>
+            <p><i class='bx bxl-gmail' ></i>balasatwick_gamidi@srmap.edu.in</p>
+            <div class="socialicons">
+              
+                
+                 <a href="https://www.linkedin.com/in/satwick-gamidi-92a66a253/" target="_blank"><i class='bx bxl-linkedin bx-burst bx-rotate-90' ></i></a>
+                <a href="https://github.com/SatwickGamidi"target="_blank"><i class='bx bxl-github bx-tada bx-flip-horizontal' ></i></a>
+                <a href="https://www.instagram.com/satwickgamidi/" target="_blank"><i class='bx bxl-instagram bx-tada bx-rotate-90' ></i></a>
+           
+            </div>
+        </div>
+        <div class="contactright">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              
+                <button type="submit " class="sub">Submit</button>
+            
+            </form>
+        </div>
+    </div>
+      </div>
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+    </body>
+</html>
